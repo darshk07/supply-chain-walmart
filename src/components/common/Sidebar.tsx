@@ -7,16 +7,16 @@ const Sidebar = () => {
   const currentPath = usePathname();
   const renderGeneralLinks = () => {
     const links = [
-      { name: "Dashboard", route: "/" },
-      { name: "Check Manufacturers", route: "/manufacturers" },
-      { name: "Check Suppliers", route: "/suppliers" },
-      { name: "Check Distributors", route: "/distributors" },
+      { name: "Dashboard", route: "/a" },
+      { name: "Check Manufacturers", route: "/a/manufacturers" },
+      { name: "Check Suppliers", route: "/a/suppliers" },
+      { name: "Check Distributors", route: "/a/distributors" },
     ];
 
     return (
-      <div className="flex flex-col gap-4 text-primary font-extralight mt-4">
+      <div className="flex flex-col gap-4 text-primary font-extralight mt-8">
         <h3 className="font-light">General</h3>
-        <div className="self-center flex flex-col gap-6">
+        <div className="self-center flex flex-col gap-4">
           {links.map((link, index) => (
             <Link
               key={index}

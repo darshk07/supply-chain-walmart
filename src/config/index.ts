@@ -25,7 +25,7 @@ export const config = defaultWagmiConfig({
   storage: createStorage({
     storage: cookieStorage,
   }),
-  transports: {
-    [optimismSepolia.id]: http("https://sepolia.optimism.io/"),
-  },
+  // transports: {
+  //   [optimismSepolia.id]: http("https://sepolia.optimism.io/"),
+  // },
 });
